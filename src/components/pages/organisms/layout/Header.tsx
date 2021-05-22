@@ -13,7 +13,6 @@ export const Header: VFC = memo(() => {
     // 不要な再レンダリングを防ぐためにusecallbackを使用する。
     const onClickHome = useCallback(() => history.push('/home'), [])
     const onClickUserManagement = useCallback(() => {
-        console.log(history.location);
         history.push('/home/user_management')
     }, [])
     const onClickSetting = useCallback(() => history.push('/home/setting'), [])
